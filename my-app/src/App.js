@@ -1,26 +1,16 @@
-import './App.css';
-import { Box } from 'theme-ui'
+import React from 'react';
+import { Switch, Route } from 'react-router-dom';
+/**
+ * Import all page components here
+ */
+import playerListPage from './pages/playerList';
+import CategoryPage from './pages/category';
 function App() {
   return (
-    <div className="App">
-      <Box sx={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
-        <Box sx={{ p: 3 }} className="App-Header">
-          <div >
-            <h1>Header</h1>
-          </div>
-        </Box>
-        <Box sx={{ flex: '1 1 auto', p: 3 }} className="App-Content">
-          <div >
-            <h2>Content</h2>
-          </div>
-        </Box>
-        <Box sx={{ p: 3 }} className="App-Footer">
-          <div >
-            <h3>Footer</h3>
-          </div>
-        </Box>
-      </Box>
-    </div>
+    <Switch> {/* The Switch decides which component to show based on the current URL.*/}
+      <Route exact path='/' component={playerListPage}></Route>
+      <Route exact path='/category' component={CategoryPage}></Route>
+    </Switch>
   );
 }
 
