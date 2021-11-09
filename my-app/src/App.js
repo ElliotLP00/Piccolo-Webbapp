@@ -1,16 +1,17 @@
 import React from 'react';
-import { Switch, Route } from 'react-router-dom';
+import { Route, Routes } from 'react-router';
 /**
  * Import all page components here
  */
-import playerListPage from './pages/playerList';
+import PlayerListPage from './pages/playerList';
 import CategoryPage from './pages/category';
 function App() {
   return (
-    <Switch> {/* The Switch decides which component to show based on the current URL.*/}
-      <Route exact path='/' component={playerListPage}></Route>
-      <Route exact path='/category' component={CategoryPage}></Route>
-    </Switch>
+    <Routes>
+      <Route path="/" element={<PlayerListPage/>}/>
+      <Route path="invoices" element={<CategoryPage />}/>
+    </Routes>
+    
   );
 }
 
