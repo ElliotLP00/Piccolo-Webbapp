@@ -1,14 +1,31 @@
-import React from 'react'
-import "./category.css"
+import React, { useLayoutEffect, useState } from 'react';
+import "./playerList.css"
 import { Box ,} from "theme-ui"
+import { Link } from 'react-router-dom';
+import logo from "../assets/logo.png";
 
-export default function category() {
-    return (
-        <div className="App">
+function useWindowSize() {
+  const [size, setSize] = useState([0, 0]);
+  useLayoutEffect(() => {
+    function updateSize() {
+      setSize([window.innerWidth, window.innerHeight]);
+    }
+    window.addEventListener('resize', updateSize);
+    updateSize();
+    return () => window.removeEventListener('resize', updateSize);
+  }, []);
+  return size;
+}
+
+export default function ShowWindowDimensions(props) {
+  const [width, height] = useWindowSize();
+  return (
+    <span>
+      <div className="App">
             <Box sx={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
-                <Box sx={{ p: 3 }} className="App-Header">
-                    <div >
-                        <h1>CATEGORY</h1>
+                <Box sx={{ p: 2 }} backgroundColor="red" width={width} className="App-Header">
+                    <div>
+                        <img src={logo} width={width} alt="Logo" />;
                     </div>
                 </Box>
                 <Box sx={{ flex: '1 1 auto', p: 3 }} className="App-Content">
@@ -17,11 +34,14 @@ export default function category() {
                     </div>
                 </Box>
                 <Box sx={{ p: 3 }} className="App-Footer">
-                    <div >
+                    <div className="App-Footer">
                         <h3>Footer</h3>
+                        <Link to="/" > next page </Link> 
                     </div>
                 </Box>
             </Box>
         </div>
-    )
+    </span>
+    );
 }
+

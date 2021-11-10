@@ -9,7 +9,7 @@ function App() {
   return (
     <Routes>
       <Route path="/" element={<PlayerListPage/>}/>
-      <Route path="invoices" element={<CategoryPage />}/>
+      <Route path="Category" element={<CategoryPage />}/>
     </Routes>
     
   );

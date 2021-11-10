@@ -4,7 +4,7 @@
   
   .App-Header {
     text-align: center;
-    background-color: transparent;
+    background-color: red;
     
   }
   
@@ -15,6 +15,7 @@
   
   
   .App-Footer {
-    text-align: center;
+    flex-direction: column;
+    flex-flow: row;
     background-color: transparent;
   }
