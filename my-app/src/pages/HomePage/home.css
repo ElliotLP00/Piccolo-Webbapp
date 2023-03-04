@@ -1,0 +1,904 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:900&display=swap");
+
+/*
+.App {
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+  }
+  
+  .App-Header {
+    background: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 4px #000 solid;
+            margin-bottom: 10px;
+            line-height: normal;
+            align-content: center;
+            width: 100vw;
+            height: 100vh;
+            min-height: 100vh; /* minimum height = screen height 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+    
+  }
+  
+  .App-Content {
+    text-align: center;
+    color:white;
+    background-color: transparent;
+  }
+  
+  
+  .App-Footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;          
+    color: white;
+    text-align: center;
+  }
+  footer .button-37 {
+    bottom:30px;
+  }
+
+  .startButton{
+    width: 200px;
+    height: 50px;
+    background-color: rgb(0, 255, 0);
+    font-size: 30px;
+    font-weight: bold;
+    border-radius: 25px;
+    position: fixed;
+  }
+
+  .title-piccolo{
+      text-transform: uppercase;
+      background-image: linear-gradient(
+        -225deg,
+        #fff800 0%,
+        #44107a 29%,
+        #ff1361 67%,
+        #fff800 100%
+      );
+      background-size: auto auto;
+      background-clip: border-box;
+      background-size: 200% auto;
+      color: #fff;
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: textclip 4s linear infinite;
+      display: inline-block;
+      font-size: 78px;
+  }
+
+  .button-add {
+    position: relative;
+    background-image: linear-gradient(92.88deg, #455EB5 9.16%, #5643CC 43.89%, #673FD7 64.72%);
+    border-radius: 8px;
+    border-style: none;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    flex-shrink: 0;
+    font-family: "Inter UI","SF Pro Display",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue",sans-serif;
+    font-size: calc(2vw + 1vmin);
+    font-weight: 500;
+    bottom: 0px;
+    width: 30vw;
+    height: 60px;
+    text-align: center;
+    text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
+    transition: all .5s;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.custom-field {
+  position: relative;
+  font-size: 18px;
+  border-top: 20px solid transparent;
+  margin-bottom: 5px;
+  display: inline-block;
+  --field-padding: 12px;
+}
+
+  .custom-field input {
+      border: none;
+      -webkit-appearance: none;
+      -ms-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      background: #f2f2f2;
+      padding: var(--field-padding);
+      border-radius: 3px;
+      width: 40vw;
+      height: 40px;
+      outline: none;
+      font-size: 18px;
+  }
+
+  .custom-field .placeholder {
+      position: absolute;
+      left: var(--field-padding);
+      width: calc(100% - (var(--field-padding) * 2));
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      top: 32px;
+      line-height: 100%;
+      transform: translateY(-50%);
+      color: #aaa;
+      transition: top 0.3s ease, color 0.3s ease, font-size 0.3s ease;
+  }
+
+  .custom-field input.dirty + .placeholder,
+  .custom-field input:focus + .placeholder,
+  .custom-field input:not(:placeholder-shown) + .placeholder {
+      top: -18px;
+      font-size: 18px;
+      color: white;
+  }
+
+  .custom-field .error-message {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      padding: 0 8px;
+      font-size: 12px;
+      background: #d30909;
+      color: #fff;
+      height: 24px;
+  }
+
+      .custom-field .error-message:empty {
+          opacity: 0;
+      }
+
+.custom-field.two input {
+  border-radius: 0;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  background: linear-gradient(90deg, #222, #222) center bottom/0 0.15em no-repeat, linear-gradient(90deg, #ccc, #ccc) left bottom/100% 0.15em no-repeat, linear-gradient(90deg, #fafafa, #fafafa) left bottom/100% no-repeat;
+  transition: background-size 0.3s ease;
+}
+  .custom-field.two input.dirty,
+  .custom-field.two input:not(:placeholder-shown),
+  .custom-field.two input:focus {
+      background-size: 100% 0.15em, 100% 0.1em, 100%;
+  }
+
+  @keyframes textclip {
+    to {
+      background-position: 200% center;
+    }
+    
+  }
+*/
+header {
+    background: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 4px #000 solid;
+    margin-bottom: 10px;
+    line-height: normal;
+    align-content: center;
+    width: 100vw;
+    height: 100vh;
+    min-height: 100vh;
+    /* minimum height = screen height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+}
+
+footer .button-37 {
+    bottom: 30px;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    margin: auto;
+    padding-top: 40px;
+    background-color: white;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.animate-charcter {
+    text-transform: uppercase;
+    background-image: linear-gradient(-225deg, #231557 0%, #44107a 29%, #ff1361 67%, #231557 100%);
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 4s linear infinite;
+    display: inline-block;
+    font-size: 72px;
+    width: 100vw;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.titel {
+    background-color: white;
+    position: relative;
+    width: 90vw;
+    vertical-align: central
+}
+
+
+.add-player-title {
+    color: #fff;
+    position: relative;
+    font-family: 'times',cursive;
+    font-weight: normal;
+    line-height: calc(5vh + 5vw);
+    background-image: linear-gradient(-225deg, #ff29ee 0%, #ffd620 29%, #00ffea 67%, #ff29ee 100%);
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #fff;
+    animation: textclip 8s linear infinite;
+    display: inline-block;
+    margin: 0px 0 0px;
+    text-transform: uppercase;
+    filter: drop-shadow(1px 1px 2px black);
+    text-align: center;
+}
+
+.add-player-title h2{
+    margin-block-start: 0.6em;
+    margin-block-end: 0em;
+    display: initial;
+    font-size: calc(8vmin);
+}
+.add-player-title h4{
+    font-size: calc(13vmin);
+    margin-block-start: 0.0em;
+    margin-block-end: 0.1em;
+    display: inline-block;
+}
+
+.custom-field {
+    position: relative;
+    font-size: calc(3vh);
+    border-top: 20px solid transparent;
+    margin-bottom: 5px;
+    display: inline-block;
+    --field-padding: 12px;
+}
+
+.custom-field input {
+    border: none;
+    -webkit-appearance: none;
+    -ms-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: #f2f2f2;
+    padding: var(--field-padding);
+    border-radius: 3px;
+    width: 60vw;
+    height: 64px;
+    outline: none;
+    font-size: calc(4vmin);
+}
+
+.custom-field .placeholder {
+    position: absolute;
+    left: var(--field-padding);
+    width: calc(100% - (var(--field-padding) * 2));
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    top: 32px;
+    line-height: 100%;
+    transform: translateY(-50%);
+    color: #aaa;
+    transition: top 0.3s ease, color 0.3s ease, font-size 0.3s ease;
+}
+
+.custom-field input.dirty+.placeholder,
+.custom-field input:focus+.placeholder,
+.custom-field input:not(:placeholder-shown)+.placeholder {
+    top: -18px;
+    font-size: 18px;
+    color: #222;
+}
+
+.custom-field .error-message {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 8px;
+    font-size: 12px;
+    background: #d30909;
+    color: #fff;
+    height: 24px;
+}
+
+.custom-field .error-message:empty {
+    opacity: 0;
+}
+
+/* ONE */
+.custom-field.one input {
+    background: none;
+    border: 2px solid #ddd;
+    transition: border-color 0.3s ease;
+}
+
+.custom-field.one input+.placeholder {
+    left: 8px;
+    padding: 0 5px;
+}
+
+.custom-field.one input.dirty,
+.custom-field.one input:not(:placeholder-shown),
+.custom-field.one input:focus {
+    border-color: #222;
+    transition-delay: 0.1s
+}
+
+.custom-field.one input.dirty+.placeholder,
+.custom-field.one input:not(:placeholder-shown)+.placeholder,
+.custom-field.one input:focus+.placeholder {
+    top: 0;
+    font-size: 10px;
+    color: #222;
+    background: #fff;
+    width: auto
+}
+
+/* TWO */
+.custom-field.two input {
+    border-radius: 0;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    background: linear-gradient(90deg, #222, #222) center bottom/0 0.15em no-repeat, linear-gradient(90deg, #ccc, #ccc) left bottom/100% 0.15em no-repeat, linear-gradient(90deg, #fafafa, #fafafa) left bottom/100% no-repeat;
+    transition: background-size 0.3s ease;
+}
+
+.custom-field.two input.dirty,
+.custom-field.two input:not(:placeholder-shown),
+.custom-field.two input:focus {
+    background-size: 100% 0.15em, 100% 0.1em, 100%;
+}
+
+/* THREE */
+.custom-field.three {
+    --draw-duration: 0.1s;
+    --draw-color: #222;
+    --draw-line-width: 2px;
+    --draw-easing: linear;
+}
+
+.custom-field.three .border {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: none;
+    display: flex;
+    align-items: center;
+    padding-left: 12px;
+    border-radius: 3px;
+}
+
+.custom-field.three .border::after,
+.custom-field.three .border::before {
+    content: "";
+    width: 0;
+    height: 0;
+    display: inline-block;
+    position: absolute;
+    border-radius: 3px;
+}
+
+.custom-field.three .border::before {
+    left: 0;
+    bottom: 0;
+    border-right: 0px solid var(--draw-color);
+    border-bottom: 0px solid var(--draw-color);
+    transition: border 0s linear calc(var(--draw-duration) * 4), height var(--draw-duration) var(--draw-easing) calc(var(--draw-duration) * 2), width var(--draw-duration) var(--draw-easing) calc(var(--draw-duration) * 3);
+}
+
+.custom-field.three .border::after {
+    right: 0;
+    top: 0;
+    border-left: 0px solid var(--draw-color);
+    border-top: 0px solid var(--draw-color);
+    transition: border 0s linear calc(var(--draw-duration) * 2), height var(--draw-duration) var(--draw-easing), width var(--draw-duration) var(--draw-easing) var(--draw-duration);
+}
+
+.custom-field.three input:focus~.border::before,
+.custom-field.three input:not(:placeholder-shown)~.border::before,
+.custom-field.three input.dirty~.border::before,
+.custom-field.three input:focus~.border::after,
+.custom-field.three input:not(:placeholder-shown)~.border::after,
+.custom-field.three input.dirty~.border::after {
+    width: 100%;
+    height: 100%;
+    border-width: var(--draw-line-width);
+}
+
+.custom-field.three input:not(:placeholder-shown)~.border::before,
+.custom-field.three input.dirty~.border::before,
+.custom-field.three input:focus~.border::before {
+    transition-delay: 0s, var(--draw-duration), 0s;
+}
+
+.custom-field.three input:not(:placeholder-shown)~.border::after,
+.custom-field.three input.dirty~.border::after,
+.custom-field.three input:focus~.border::after {
+    transition-delay: calc(var(--draw-duration) * 2), calc(var(--draw-duration) * 3), calc(var(--draw-duration) * 2);
+}
+
+/* CSS */
+.button-36 {
+    position: relative;
+    background-image: linear-gradient(92.88deg, #455EB5 9.16%, #5643CC 43.89%, #673FD7 64.72%);
+    border-radius: 8px;
+    border-style: none;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    flex-shrink: 0;
+    font-family: "Inter UI", "SF Pro Display", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-size: calc(3vmin);
+    font-weight: 500;
+    width: 20vw;
+    height: 4rem;
+    padding: 0 1.6rem;
+    text-align: center;
+    text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
+    transition: all .5s;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.button-37 {
+    position: relative;
+    background-image: linear-gradient(92.88deg, #455EB5 9.16%, #5643CC 43.89%, #673FD7 64.72%);
+    border-radius: 8px;
+    text-transform: uppercase;
+    border-style: none;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    flex-shrink: 0;
+    font-family: "Inter UI", "SF Pro Display", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-size: calc(2vw + 2vh + 1vmin);
+    font-weight: 500;
+    width: 90vw;
+    height: 10vh;
+    padding: 0 1.6rem;
+    margin-bottom: 0px;
+    text-align: center;
+    text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
+    transition: all .5s;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.button-36:hover,
+.button-37:hover {
+    box-shadow: rgba(80, 63, 205, 0.5) 0 1px 30px;
+    transition-duration: .1s;
+}
+
+.playerCard {
+    position: relative;
+    width: 80vw;
+    height: 55px;
+    background-image: linear-gradient(-225deg, rgba(255, 255, 255, 0.0) 0%, rgba(255, 255, 255, 0.0) 60%, #49ff00 80%, rgba(255, 255, 255, 0.0) 100%);
+    background-color: transparent;
+    text-align: left;
+    vertical-align: middle;
+    border-radius: 25px;
+    border: 2px solid black;
+    display: flex;
+    margin-bottom: 10px;
+    justify-items: center;
+    align-items: center;
+    background-size: auto auto;
+    background-size: 200% auto;
+    color: #fff;
+    animation: textclip 1s ease-out;
+}
+
+.playerCard h2 {
+    color: white;
+    filter: drop-shadow(2px 2px 4px black);
+    font-family: 'times', cursive;
+    margin-left: 30px;
+    width: 85%;
+    font-size: 20px;
+}
+
+.playerCard_btn {
+
+    margin-right: 14px;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+}
+
+#remove {
+    filter: drop-shadow(2px 0px 4px red);
+    color: red;
+    font-size: calc(6vmin);
+}
+
+#settings {
+    filter: drop-shadow(2px 0px 4px grey);
+    color: grey;
+    font-size: calc(6vmin);
+}
+
+#list {
+    width: 100vw;
+    display: table flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20vh;
+
+}
+
+.cb-slideshow,
+.cb-slideshow:after {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: 0;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+.cb-slideshow li div {
+    z-index: 1000;
+    position: absolute;
+    bottom: 30px;
+    left: 0px;
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+    -webkit-animation: titleAnimation 36s linear infinite 0s;
+    -moz-animation: titleAnimation 36s linear infinite 0s;
+    -o-animation: titleAnimation 36s linear infinite 0s;
+    -ms-animation: titleAnimation 36s linear infinite 0s;
+    animation: titleAnimation 36s linear infinite 0s;
+}
+
+.cb-slideshow li span {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: none;
+    opacity: 0;
+    z-index: 0;
+    -webkit-backface-visibility: hidden;
+    -webkit-animation: imageAnimation 36s linear infinite 0s;
+    -moz-animation: imageAnimation 36s linear infinite 0s;
+    -o-animation: imageAnimation 36s linear infinite 0s;
+    -ms-animation: imageAnimation 36s linear infinite 0s;
+    animation: imageAnimation 36s linear infinite 0s;
+}
+
+.cb-slideshow li:nth-child(1) span {
+    background-image: url('../../assets/Moa/MOA1.JPG');
+    filter: blur(5px);
+}
+
+.cb-slideshow li:nth-child(2) span {
+    background-image: url('../../assets/Moa/MOA2.JPG');
+    -webkit-animation-delay: 6s;
+    -moz-animation-delay: 6s;
+    -o-animation-delay: 6s;
+    -ms-animation-delay: 6s;
+    animation-delay: 6s;
+    filter: blur(5px);
+}
+
+.cb-slideshow li:nth-child(3) span {
+    background-image: url('../../assets/Moa/MOA3.JPG');
+    -webkit-animation-delay: 12s;
+    -moz-animation-delay: 12s;
+    -o-animation-delay: 12s;
+    -ms-animation-delay: 12s;
+    animation-delay: 12s;
+    filter: blur(5px);
+}
+
+.cb-slideshow li:nth-child(4) span {
+    background-image: url('../../assets/Moa/MOA4.JPG');
+    -webkit-animation-delay: 18s;
+    -moz-animation-delay: 18s;
+    -o-animation-delay: 18s;
+    -ms-animation-delay: 18s;
+    animation-delay: 18s;
+    filter: blur(5px);
+}
+
+.cb-slideshow li:nth-child(5) span {
+    background-image: url('../../assets/Moa/MOA5.JPG');
+    -webkit-animation-delay: 24s;
+    -moz-animation-delay: 24s;
+    -o-animation-delay: 24s;
+    -ms-animation-delay: 24s;
+    animation-delay: 24s;
+    filter: blur(5px);
+}
+
+.cb-slideshow li:nth-child(6) span {
+    background-image: url('../../assets/Moa/MOA6.JPG');
+    -webkit-animation-delay: 30s;
+    -moz-animation-delay: 30s;
+    -o-animation-delay: 30s;
+    -ms-animation-delay: 30s;
+    animation-delay: 30s;
+    filter: blur(5px);
+}
+
+.cb-slideshow li:nth-child(2) div {
+    -webkit-animation-delay: 6s;
+    -moz-animation-delay: 6s;
+    -o-animation-delay: 6s;
+    -ms-animation-delay: 6s;
+    animation-delay: 6s;
+}
+
+.cb-slideshow li:nth-child(3) div {
+    -webkit-animation-delay: 12s;
+    -moz-animation-delay: 12s;
+    -o-animation-delay: 12s;
+    -ms-animation-delay: 12s;
+    animation-delay: 12s;
+}
+
+.cb-slideshow li:nth-child(4) div {
+    -webkit-animation-delay: 18s;
+    -moz-animation-delay: 18s;
+    -o-animation-delay: 18s;
+    -ms-animation-delay: 18s;
+    animation-delay: 18s;
+}
+
+.cb-slideshow li:nth-child(5) div {
+    -webkit-animation-delay: 24s;
+    -moz-animation-delay: 24s;
+    -o-animation-delay: 24s;
+    -ms-animation-delay: 24s;
+    animation-delay: 24s;
+}
+
+.cb-slideshow li:nth-child(6) div {
+    -webkit-animation-delay: 30s;
+    -moz-animation-delay: 30s;
+    -o-animation-delay: 30s;
+    -ms-animation-delay: 30s;
+    animation-delay: 30s;
+}
+
+@-webkit-keyframes imageAnimation {
+    0% {
+        opacity: 0;
+        -webkit-animation-timing-function: ease-in;
+    }
+
+    8% {
+        opacity: 1;
+        -webkit-transform: scale(1.05);
+        -webkit-animation-timing-function: ease-out;
+    }
+
+    17% {
+        opacity: 1;
+        -webkit-transform: scale(1.1);
+    }
+
+    22% {
+        opacity: 0;
+        -webkit-transform: scale(1.1) translateY(-20%);
+    }
+
+    25% {
+        opacity: 0;
+        -webkit-transform: scale(1.1) translateY(-100%);
+    }
+
+    100% {
+        opacity: 0
+    }
+}
+
+@-moz-keyframes imageAnimation {
+    0% {
+        opacity: 0;
+        -moz-animation-timing-function: ease-in;
+    }
+
+    8% {
+        opacity: 1;
+        -moz-transform: scale(1.05);
+        -moz-animation-timing-function: ease-out;
+    }
+
+    17% {
+        opacity: 1;
+        -moz-transform: scale(1.1);
+    }
+
+    22% {
+        opacity: 0;
+        -webkit-transform: scale(1.1) translateY(-20%);
+    }
+
+    25% {
+        opacity: 0;
+        -moz-transform: scale(1.1) translateY(-100%);
+    }
+
+    100% {
+        opacity: 0
+    }
+}
+
+@-o-keyframes imageAnimation {
+    0% {
+        opacity: 0;
+        -o-animation-timing-function: ease-in;
+    }
+
+    8% {
+        opacity: 1;
+        -o-transform: scale(1.05);
+        -o-animation-timing-function: ease-out;
+    }
+
+    17% {
+        opacity: 1;
+        -o-transform: scale(1.1);
+    }
+
+    22% {
+        opacity: 0;
+        -webkit-transform: scale(1.1) translateY(-20%);
+    }
+
+    25% {
+        opacity: 0;
+        -o-transform: scale(1.1) translateY(-100%);
+    }
+
+    100% {
+        opacity: 0
+    }
+}
+
+@-ms-keyframes imageAnimation {
+    0% {
+        opacity: 0;
+        -ms-animation-timing-function: ease-in;
+    }
+
+    8% {
+        opacity: 1;
+        -ms-transform: scale(1.05);
+        -ms-animation-timing-function: ease-out;
+    }
+
+    17% {
+        opacity: 1;
+        -ms-transform: scale(1.1);
+    }
+
+    22% {
+        opacity: 0;
+        -webkit-transform: scale(1.1) translateY(-20%);
+    }
+
+    25% {
+        opacity: 0;
+        -ms-transform: scale(1.1) translateY(-100%);
+    }
+
+    100% {
+        opacity: 0
+    }
+}
+
+@keyframes imageAnimation {
+    0% {
+        opacity: 0;
+        animation-timing-function: ease-in;
+    }
+
+    8% {
+        opacity: 1;
+        transform: scale(1.05);
+        animation-timing-function: ease-out;
+    }
+
+    17% {
+        opacity: 1;
+        transform: scale(1.1);
+    }
+
+    22% {
+        opacity: 0;
+        -webkit-transform: scale(1.1) translateY(-20%);
+    }
+
+    25% {
+        opacity: 0;
+        -transform: scale(1.1) translateY(-100%);
+    }
+
+    100% {
+        opacity: 0
+    }
+}
+
+.no-cssanimations .cb-slideshow li span {
+    opacity: 1;
+}
+
+@media (min-width: 768px) {
+    .button-36 {
+        padding: 0 2.6rem;
+    }
+
+    .button-37 {
+        padding: 0 2.6rem;
+    }
+}
+
+@keyframes textclip {
+    to {
+        background-position: 200% center;
+    }
+}

@@ -11,6 +11,11 @@
 # production
 /build
 
+/src/questionsJS
+/src/assets/Moa
+/src/assets/questionsImage
+
+
 # misc
 .DS_Store
 .env.local

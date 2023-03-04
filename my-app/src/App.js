@@ -1,15 +1,15 @@
 import React from 'react';
-import { Route, Routes } from 'react-router';
+import { Route, Routes} from 'react-router';
 /**
  * Import all page components here
  */
-import PlayerListPage from './pages/playerList';
-import CategoryPage from './pages/category';
+import CategoryPage from './pages/HomePage/home_copy';
+import GamePage from './pages/GamePage/game_copy'
 function App() {
   return (
-    <Routes>
-      <Route path="/" element={<PlayerListPage/>}/>
-      <Route path="Category" element={<CategoryPage />}/>
+    <Routes >
+        <Route exact path="/" element={<CategoryPage />}/>
+        <Route path="/game" element={<GamePage />}/>
     </Routes>
     
   );
