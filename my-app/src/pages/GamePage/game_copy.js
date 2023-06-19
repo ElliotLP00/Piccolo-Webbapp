@@ -136,7 +136,8 @@ const Game=(props)=>{
                     }
                 
                 console.log("I GAME: PR:"+pr)
-                if (pr != 0) {
+                console.log("info.count(#)="+(info.split('#').length - 1))
+                if (pr != 0 && info.split('#').length - 1===pr) {
                     var strVirus = "";
                     var resVirus = [];
                     if (newTask.virus != null) {
@@ -149,6 +150,7 @@ const Game=(props)=>{
                     console.log("RES L:"+res.length);
                     str = res[0];
                     var usersAvaliable = clientnames;
+                    
                     for (var i = 1; i < pr+1 ; i++) {
                         var randomNumber = (Math.floor(Math.random() * usersAvaliable.length));
                         if (newTask.virus != null) {
@@ -166,7 +168,6 @@ const Game=(props)=>{
                         virusText = strVirus;
                     }
                     info = str
-                    
                 }
                 const filteredData = alltasks.filter(item => item.info !== alltasks[randomVal].info);
                 alltasks = filteredData;
@@ -194,29 +195,29 @@ const Game=(props)=>{
             const initTasks=()=> {
                 var pretask = [];
                 //pretask.push(doOrDrinkQ.results);
-                //if (this.state.mode == "Foreplay"){
-                    //pretask.push(foreplayQ.results);
-                //}else if (this.state.mode == "Dragg"){
-                    //pretask.push(draggQ.results);
-                    //pretask.push(kannaOchKlammaQ.results);
-                //}else if (this.state.mode == "KannaOchKlamma"){
-                    //pretask.push(kannaOchKlammaQ.results);
-                //}else if (this.state.mode == "KanViSupa") {
-                    //pretask.push(kanViSupaQ.results);
-                //}else if (this.state.mode == "All") {
-                    /*pretask.push(foreplayQ.results);
+                /*if (this.state.mode == "Foreplay"){
+                    pretask.push(foreplayQ.results);
+                }else if (this.state.mode == "Dragg"){
                     pretask.push(draggQ.results);
                     pretask.push(kannaOchKlammaQ.results);
-                    pretask.push(kanViSupaQ.results);*/
+                }else if (this.state.mode == "KannaOchKlamma"){
+                    pretask.push(kannaOchKlammaQ.results);
+                }else if (this.state.mode == "KanViSupa") {
+                    pretask.push(kanViSupaQ.results);
+                }else if (this.state.mode == "All") {
+                    pretask.push(foreplayQ.results);
+                    pretask.push(draggQ.results);
+                    pretask.push(kannaOchKlammaQ.results);
+                    pretask.push(kanViSupaQ.results);
                     //pretask.push(doOrDrinkQ.results);
                     //pretask.push(extremDraggQ.results);
-                // }   
-               // pretask.push(draggQ.results);
-                //pretask.push(kannaOchKlammaQ.results);
-                //pretask.push(kanViSupaQ.results);
-                //pretask.push(doOrDrinkQ.results);
+                 }   */
+                //pretask.push(draggQ.results);
+                pretask.push(kannaOchKlammaQ.results);
+                pretask.push(kanViSupaQ.results);
+                pretask.push(doOrDrinkQ.results);
                 //pretask.push(extremDraggQ.results);
-                pretask.push(foreplayQ.results);
+                //pretask.push(foreplayQ.results);
                 pretask.push(moaDLC.results);
                 alltasks = [];
                 for (var i = 0; i < pretask.length; i++) {

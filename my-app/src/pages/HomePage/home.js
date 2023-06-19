@@ -6,7 +6,7 @@ import $ from 'jquery';
 $(document).ready(function () {
     //$('.header').hide();
     $('.container').hide();
-
+    
     $('.button-36').click(function () {
         var name = $('#input').val();
         if (name !== null && name !== "") {
@@ -129,9 +129,10 @@ export default class home extends React.Component {
                     </div>
                 </ul>
                 <footer>
+                    <button type="button" className='button-37'>{}</button>
                     <Link to={{
                                 pathname: "/game",
-                                state: "test" // your data array of objects
+                                state: "Test"// your data array of objects
                             }}>
                         <button type="button" className="button-37">Start Game</button>
                     </Link>
